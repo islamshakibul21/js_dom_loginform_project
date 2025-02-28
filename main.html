@@ -127,13 +127,26 @@
          
           <div class="card bg-base-200 w-6/7 rounded-xl p-8  shrink-0 shadow-2xl">
             <div class="card-body">
+              
               <fieldset class="fieldset">
-                <label class="fieldset-label">Email</label>
-                <input type="email" class="input p-8 rounded-xl w-full" placeholder="Email" />
-                <label class="fieldset-label">Password</label>
-                <input type="password" class="input p-8 w-full rounded-xl" placeholder="Password" />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button class="btn bg-blue-500 p-8 rounded-xl w-full mt-4">Add money</button>
+                <legend class="fieldset-label">select Bank account</legend>
+                <select class="select w-full mt-3 pl-3 rounded-xl">
+                  <option disabled selected>Select bank account</option>
+                  <option>Nagad</option>
+                  <option>Rocket</option>
+                  <option>Bikash</option>
+                </select>
+                
+              </fieldset>
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account number</label>
+                <input type="email" class="input pl-3 rounded-xl w-full" placeholder="Account Number" />
+                <label id="pin" class="fieldset-label">Pin</label>
+                <input type="email" value="1234" class="input pl-3 rounded-xl w-full" placeholder="pin" />
+                <label id="Amount" class="fieldset-label">Amount</label>
+                <input type="password" class="input pl-3 w-full rounded-xl" placeholder="Amount" />
+                <div><a class="link link-hover">forgot password?</a></div>
+                <button id="btn-add" class="btn bg-blue-500  rounded-xl w-full mt-4">Add money</button>
               </fieldset>
             </div>
           </div>
@@ -141,7 +154,7 @@
       </div>
     </section>
    
-    
+    <script src="javascript/addmoney.js"></script>
 </body>
    
 </html>
