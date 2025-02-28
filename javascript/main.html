@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
+</head>
+<style>
+  
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+<body class="max-w-6xl mx-auto">
+
+   <header>
+
+    <nav class=" flex  justify-between mb-10 items-center py-4">
+      <div class="flex  mr-4" >
+           <div class="w-16">  
+            <img src="../assets/Group.png" alt="">
+            </div>    
+            <div class="space-y-3 outfit-font">
+                <h2 class="text-xl md:text-2xl text-[#080808]  font-extrabold">$45000</h2>
+                <p class="text-2xl lg:text-3xl text-[#080808] font-regular">Available Balance</p>
+            </div>
+      </div>
+      <button class="rounded-lg border-white bg-gray-300 space-x-3 p-5 w-40 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25
+         0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+      </svg>
+        <span class="outfit-font font-regular text-[#080808] text-lg">Log Out</span></button>
+       
+    </nav>
+    
+    <section class="mt-20">
+        <div class=" ml-8 mb-12">
+          <h1 class="font-extrabold mb-2 text-3xl text-[#080808] lg:3xl  outfit-font ">Welcome to Payooo!</h1>
+          <p class="font-regular text-[#080808]  text-lg md:2xl" >Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </div>
+        
+        <!-- card container -->
+         <!-- two ways card
+            <!- design-1  -->
+
+             <!-- <div class="grid grid-cols-3 gap-3">
+
+
+
+          <div class="box p-9 rounded-xl w-4/5 justify-center border">
+            <img  src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+          <div class="box p-9 rounded-lg  w-4/5 justify-center border">
+            <img src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+          <div class="box p-9 rounded-lg w-4/5 justify-center border">
+            <img src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+          <div class="box p-9 rounded-lg  w-4/5 justify-center border">
+            <img  src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+          <div class="box p-9 rounded-lg   w-4/5 justify-center border">
+            <img src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+          <div class="box p-9 rounded-lg  w-4/5 justify-center border">
+            <img  src="../assets/wallet1.png" alt="">
+            <h1 class="font-regular text-lg text-[#080808]">add money</h1>
+          </div>
+        </div>    -->
+
+
+            <!-- card design-2 -->
+               <!-- hero section card -->
+        <div class="cards cursor-pointer grid grid-cols-3 mt-14 gap-3 p-6  ">
+          <div class="box border p-4 text-center rounded-lg">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+          <div class="box border p-4 rounded-lg text-center">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+          <div class="box border p-4 rounded-lg text-center">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+          <div class="box border p-4 rounded-lg text-center">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+          <div class="box border p-4 rounded-lg text-center">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+          <div class="box border p-4 rounded-lg text-center">
+            <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
+            <h2>Add money</h2>
+          </div>
+        </div>
+           
+
+
+      </section>
+
+  </header>
+   
+    <section>
+      <div >
+        <div class="hero-content flex-col lg:flex-row-reverse">
+         
+          <div class="card bg-base-200 w-6/7 rounded-xl p-8  shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Email</label>
+                <input type="email" class="input p-8 rounded-xl w-full" placeholder="Email" />
+                <label class="fieldset-label">Password</label>
+                <input type="password" class="input p-8 w-full rounded-xl" placeholder="Password" />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button class="btn bg-blue-500 p-8 rounded-xl w-full mt-4">Add money</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+</body>
+   
+</html>
