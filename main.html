@@ -7,8 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <!-- daisy ui link  -->
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+      <!-- tailwind css link -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
    
 </head>
@@ -32,7 +34,7 @@
             <img src="../assets/Group.png" alt="">
             </div>    
             <div class="space-y-3 outfit-font">
-                <h2 class="text-xl md:text-2xl text-[#080808]  font-extrabold">$45000</h2>
+                <h2 class="text-xl md:text-2xl text-[#080808]  font-extrabold">$ <span id="updateValue">45000</span></h2>
                 <p class="text-2xl lg:text-3xl text-[#080808] font-regular">Available Balance</p>
             </div>
       </div>
@@ -88,72 +90,101 @@
 
             <!-- card design-2 -->
                <!-- hero section card -->
-        <div class="cards cursor-pointer grid grid-cols-3 mt-14 gap-3 p-6  ">
-          <div class="box border p-4 text-center rounded-lg">
+                
+        <div  class="cards cursor-pointer grid grid-cols-3 mt-14 gap-3 p-6  ">
+          <div id="addMoney" class="box border p-4 text-center rounded-lg">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
             <h2>Add money</h2>
           </div>
-          <div class="box border p-4 rounded-lg text-center">
+          <div id="cashout" class="box border p-4 rounded-lg text-center">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
-            <h2>Add money</h2>
+            <h2>cashout</h2>
           </div>
           <div class="box border p-4 rounded-lg text-center">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
-            <h2>Add money</h2>
+            <h2>Transfer Money</h2>
           </div>
           <div class="box border p-4 rounded-lg text-center">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
-            <h2>Add money</h2>
+            <h2>Pay Bill</h2>
           </div>
           <div class="box border p-4 rounded-lg text-center">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
-            <h2>Add money</h2>
+            <h2>Get Bonus</h2>
           </div>
           <div class="box border p-4 rounded-lg text-center">
             <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="">
-            <h2>Add money</h2>
+            <h2>Transections</h2>
           </div>
         </div>
-           
-
-
+           <!-- End cards design -->  
       </section>
-
   </header>
-   
-    <section>
+
+
+
+
+        <!-- hero section and selection option and pin,password input in the placeholder -->
+     
+    <section id="AddMoneySection">
+
       <div >
         <div class="hero-content flex-col lg:flex-row-reverse">
-         
-          <div class="card bg-base-200 w-6/7 rounded-xl p-8  shrink-0 shadow-2xl">
-            <div class="card-body">
-              
+          <div class="card bg-base-200 w-full shrink-0 shadow-2xl">
+            <div class="card-body"> 
               <fieldset class="fieldset">
                 <legend class="fieldset-label">select Bank account</legend>
-                <select class="select w-full mt-3 pl-3 rounded-xl">
+                <select id="bank" class="select pl-3 rounded-xl w-full">
                   <option disabled selected>Select bank account</option>
-                  <option>Nagad</option>
-                  <option>Rocket</option>
-                  <option>Bikash</option>
+                  <option value="nagad">Nagad</option>
+                  <option value="rocket">Rocket</option>
+                  <option value="bikash">Bikash</option>
                 </select>
                 
               </fieldset>
               <fieldset class="fieldset">
                 <label class="fieldset-label">Account number</label>
-                <input type="email" class="input pl-3 rounded-xl w-full" placeholder="Account Number" />
-                <label id="pin" class="fieldset-label">Pin</label>
-                <input type="email" value="1234" class="input pl-3 rounded-xl w-full" placeholder="pin" />
-                <label id="Amount" class="fieldset-label">Amount</label>
-                <input type="password" class="input pl-3 w-full rounded-xl" placeholder="Amount" />
+                <input value="0123495" maxelength="11" type="number" id="Number" class="input pl-3 rounded-xl w-full" placeholder="Account Number" />
+                <label class="fieldset-label">Pin</label>
+                <input type="text" id="PinNUM" value="1234" class="input pl-3 rounded-xl w-full" placeholder="pin" />
+                <label  class="fieldset-label">Amount</label>
+                <input type="text" id="amount" class="input pl-3 rounded-xl w-full" placeholder="Amount" />
                 <div><a class="link link-hover">forgot password?</a></div>
-                <button id="btn-add" class="btn bg-blue-500  rounded-xl w-full mt-4">Add money</button>
+                <button id="btnAdd" class="btn bg-blue-500 pl-3 rounded-xl w-full ">Add money</button>
               </fieldset>
             </div>
           </div>
         </div>
       </div>
     </section>
+     
    
+
+     <section id="CashSection"> 
+      
+      
+        <div >
+          <div class="hero-content flex-col lg:flex-row-reverse">
+           
+            <div class="card bg-base-200 w-6/7 rounded-xl p-8  shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="fieldset-label">Agent number</label>
+                  <input value="0123495" maxelength="11" type="number" id="ANumber" class="input pl-3 rounded-xl w-full" placeholder="Account Number" />
+                  <label class="fieldset-label">Amount</label>
+                  <input type="text" id="APinNUM" value="1234" class="input w-full pl-3 rounded-xl" placeholder="pin" />
+                  <label  class="fieldset-label">Pin</label>
+                  <input type="text" id="Aamount" class="input w-full pl-3 rounded-xl" placeholder="Amount" />
+                  <div><a class="link link-hover">forgot password?</a></div>
+                  <button id="btnAdd" class="btn bg-blue-500  rounded-xl w-full mt-4">Cash out</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+    </section> 
+    <script src="javascript/cashout.js"></script>
     <script src="javascript/addmoney.js"></script>
 </body>
    
