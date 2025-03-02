@@ -4,7 +4,7 @@
     event.preventDefault();
     const accountNum=document.getElementById("input-Num").value;
      const convertAccountNum=parseInt(accountNum);
-     const pinNum = document.getElementById("PinNUM").value;
+     const pinNum = document.getElementById("pin").value;
      const convertNum = parseInt(pinNum);
      if(accountNum.length === 11){
         if(convertNum===1234){
